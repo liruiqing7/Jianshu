@@ -94,7 +94,7 @@ class Header extends Component {
 			<Icon className={focused ?  'focused iconfont' : 'iconfont'} type="search" />
 				{this.getListArea()}
 			</SearchWrapper>
-		</Nav>
+			</Nav>
 			<Addition>
 			<Link to='/Write'>
 				<Button className='writting'><Icon type="edit" />写文章</Button>

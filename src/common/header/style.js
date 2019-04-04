@@ -2,16 +2,19 @@ import styled from 'styled-components';
 import logopic from '../../statics/logo.png';
 
 export const HeaderWrapper = styled.div`
+	position: relative;
 	z-index:1;
-	position:fixed;
 	width:100%;
+	min-width:1460px;
 	height:56px;
 	border-bottom:1px solid #f0f0f0;
 	background:#FFF;
+	position:fixed;
 `;
 
 export const Logo = styled.div`
-	position:absolute;
+	position:relative;
+	float:left;
 	top:0;
 	left:0;
 	dispaly:block;
@@ -22,12 +25,13 @@ export const Logo = styled.div`
 `;
 
 export const Nav = styled.div`
-	width:1260px;
+	width:960px;
 	height:100%;
 	margin:0 auto;
 `;
 
 export const NavItem= styled.div`
+	position:relative;
 	line-height: 56px;
 	padding: 0 15px;
 	font-size:17px;
@@ -145,9 +149,10 @@ export const SearchInfoList = styled.div`
 `;
 
 export const Addition = styled.div`
-	position:absolute;
-	right:0;
-	top:0;
+	position: relative;
+	width:240px;
+	float:right;
+	top:-56px;
 	height:56px;
 `;
 export const Button = styled.div`

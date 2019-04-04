@@ -6,23 +6,25 @@ import { Link } from 'react-router-dom';
 class Topic extends PureComponent {
 	render () {
 		const { list } = this.props;
-		return (
-			<Link to='/detail1'>
+		return (		
 			<TopicWrapper>
 				{
-					list.map((item)=> (						
+					list.map((item)=> (	
+					<Link to='/detail1'>				
 						<TopicItem key={item.get('id')}>
+						
 							<img  
 								className='topic-pic' 
 								src={item.get('imgUrl')}
 								alt=''
 							/>
+							
 							{item.get('title')}
 						</TopicItem>
+					</Link>
 					))
 				}				
 			</TopicWrapper>
-			</Link>
 		)
 	}
 }
